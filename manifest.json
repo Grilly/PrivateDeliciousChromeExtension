@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "include_globs": [ "http://delicious.com/*", "http://www.delicious.com/*" ],
+      "js": [ "privateDelicious.js" ],
+      "matches": [ "http://delicious.com/*", "http://www.delicious.com/*" ]
+   } ],
+   "description": "Checks \"Make Private\" by default on \"Save a Bookmark on Delicious\" page.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLT76hh+X/cqHX6wzXd2nB9KQFhT1lEV0nH30tN1d7L55lK4llYnQl7yyS8uMuYtQrtTJAi4gvD8XVxKixSXnwZ5eLiO0C8QxgAVHK9AUNBPvlh39wfCbgtNBYyzFSHIPkCl/2ZRoobMzXEET44YAwlJ83z69e0Rz0B1KkKJ9SkQIDAQAB",
+   "name": "Private delicious",
+   "permissions": [ "http://delicious.com/*", "http://www.delicious.com/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}
